@@ -17,7 +17,7 @@ def standardButton(name, container, click1_handler, row = 0, column = 0):
     button["text"] = name
     button.bind("<Button-1>", click1_handler)
     button.bind("<Return>", click1_handler)
-    button.grid(row = row, column = 0)
+    button.grid(row = row, column = col)
 
 def a_handler(event):
     print(event.widget["text"])
