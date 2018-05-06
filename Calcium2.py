@@ -2,7 +2,7 @@ from tkinter import *
 
 
 class CalciumApp:
-    def layout(self):
+    def layout(self: CalciumApp) -> None:
         self.results = Label(self.root, text ="Results")
         self.results.grid(column = 0, row = 0, columnspan = 3)
 
@@ -16,16 +16,16 @@ class CalciumApp:
         self.button3.grid(column = 2, row = 1)
 
 
-    def __init__(self, root):
+    def __init__(self: CalciumApp, root: Tk) -> None:
         self.root = root
         self.layout()
 
 
-    def run(self):
+    def run(self: CalciumApp) -> None:
         mainloop()
 
 
-def main():
+def main() -> None:
     root = Tk()
     app = CalciumApp(root)
     app.run()
